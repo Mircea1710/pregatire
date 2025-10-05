@@ -13,7 +13,7 @@ bool moderat(int n ){
   for(int d=2; d*d<=n; d++){
     if(is_prime(d) * is_prime(d++) == n)
       return true;
-    if(is_prime(d) * is_prime(d++) > n)
+    if(is_prime(d) * is_prime(d++) < n)
       break;
   }
   return false;
